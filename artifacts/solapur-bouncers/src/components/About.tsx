@@ -13,8 +13,8 @@ export default function About() {
     <section id="about" className="py-24 bg-background relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -27,7 +27,7 @@ export default function About() {
                 The Elite Standard in <span className="gold-gradient-text">Protection</span>
               </h2>
               <p className="text-lg text-white/70 leading-relaxed">
-                SOLAPUR BOUNCERS is Solapur's most trusted security agency. We provide a disciplined, highly trained, and professional team for all types of events. 
+                SOLAPUR BOUNCERS is Solapur's most trusted security agency. We provide a disciplined, highly trained, and professional team for all types of events.
               </p>
               <p className="text-lg text-white/70 leading-relaxed mt-4">
                 Led by <strong className="text-white">Riyaz Shaikh</strong>, our agency is committed to ensuring absolute safety with professionalism, punctuality, and reliability. Whether it's a high-profile VIP visit, a grand wedding, or massive crowd management, our presence guarantees peace of mind.
@@ -56,18 +56,22 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-full opacity-50"></div>
-            <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-              <img 
-                src="/images/gallery1.jpeg"
-                alt="Solapur Bouncers Team" 
-                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
+            <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-full opacity-40 pointer-events-none" />
+            <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-[#111]">
+              {/* Full natural ratio — no crop */}
+              <img
+                src="/images/owner-team.jpeg"
+                alt="Riyaz Shaikh with Solapur Bouncers Team"
+                className="w-full h-auto object-contain block"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-              <div className="absolute bottom-6 left-6 right-6">
-                <div className="bg-background/80 backdrop-blur-md border border-white/10 p-4 rounded-xl inline-block">
-                  <div className="text-primary font-bold text-2xl font-serif">50+</div>
-                  <div className="text-white/80 text-sm font-medium uppercase tracking-wider">Active Guards</div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute bottom-5 left-5">
+                <div className="bg-background/80 backdrop-blur-md border border-primary/20 px-4 py-3 rounded-xl inline-flex items-center gap-3">
+                  <Shield className="w-5 h-5 text-primary" />
+                  <div>
+                    <div className="text-primary font-bold text-lg font-serif leading-none">Riyaz Shaikh</div>
+                    <div className="text-white/60 text-xs uppercase tracking-widest mt-0.5">Founder & Director</div>
+                  </div>
                 </div>
               </div>
             </div>

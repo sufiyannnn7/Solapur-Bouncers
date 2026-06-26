@@ -1,3 +1,5 @@
+import { AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
@@ -16,11 +18,21 @@ import LoadingScreen from "@/components/LoadingScreen";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const t = setTimeout(() => setLoading(false), 2200);
+    return () => clearTimeout(t);
+  }, []);
+
   return (
     <div className="bg-background min-h-screen text-foreground relative selection:bg-primary selection:text-black">
-      <LoadingScreen />
+      <AnimatePresence>
+        {loading && <LoadingScreen />}
+      </AnimatePresence>
+
       <Navbar />
-      
+
       <main>
         <Hero />
         <Stats />
@@ -34,7 +46,7 @@ export default function Home() {
         <FAQ />
         <Contact />
       </main>
-      
+
       <Footer />
       <FloatingButtons />
       <ScrollToTop />
