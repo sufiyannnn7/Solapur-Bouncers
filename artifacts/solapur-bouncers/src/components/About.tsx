@@ -1,0 +1,81 @@
+import { motion } from "framer-motion";
+import { Shield, Clock, Award, Users } from "lucide-react";
+import groupImage from "@assets/WhatsApp_Image_2026-06-11_at_9.16.02_PM_(1)_1782486884048.jpeg";
+
+export default function About() {
+  const features = [
+    { icon: <Shield className="w-6 h-6" />, title: "Trusted Security", desc: "Licensed & verified professionals." },
+    { icon: <Clock className="w-6 h-6" />, title: "24/7 Availability", desc: "Ready for rapid deployment." },
+    { icon: <Users className="w-6 h-6" />, title: "Trained Team", desc: "Disciplined & experienced personnel." },
+    { icon: <Award className="w-6 h-6" />, title: "Premium Service", desc: "Discreet and high-end protection." },
+  ];
+
+  return (
+    <section id="about" className="py-24 bg-background relative overflow-hidden">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+            className="space-y-8"
+          >
+            <div>
+              <h4 className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">About Us</h4>
+              <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight">
+                The Elite Standard in <span className="gold-gradient-text">Protection</span>
+              </h2>
+              <p className="text-lg text-white/70 leading-relaxed">
+                SOLAPUR BOUNCERS is Solapur's most trusted security agency. We provide a disciplined, highly trained, and professional team for all types of events. 
+              </p>
+              <p className="text-lg text-white/70 leading-relaxed mt-4">
+                Led by <strong className="text-white">Riyaz Shaikh</strong>, our agency is committed to ensuring absolute safety with professionalism, punctuality, and reliability. Whether it's a high-profile VIP visit, a grand wedding, or massive crowd management, our presence guarantees peace of mind.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+              {features.map((feature, idx) => (
+                <div key={idx} className="flex gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
+                    {feature.icon}
+                  </div>
+                  <div>
+                    <h5 className="font-bold text-white mb-1">{feature.title}</h5>
+                    <p className="text-sm text-white/60">{feature.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+            className="relative"
+          >
+            <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-full opacity-50"></div>
+            <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+              <img 
+                src={groupImage} 
+                alt="Solapur Bouncers Team" 
+                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div className="absolute bottom-6 left-6 right-6">
+                <div className="bg-background/80 backdrop-blur-md border border-white/10 p-4 rounded-xl inline-block">
+                  <div className="text-primary font-bold text-2xl font-serif">50+</div>
+                  <div className="text-white/80 text-sm font-medium uppercase tracking-wider">Active Guards</div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+        </div>
+      </div>
+    </section>
+  );
+}

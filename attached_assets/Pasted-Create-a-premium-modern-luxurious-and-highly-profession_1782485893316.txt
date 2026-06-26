@@ -1,0 +1,225 @@
+Create a premium, modern, luxurious, and highly professional business website for a security agency named "SOLAPUR BOUNCERS". The design should reflect trust, discipline, strength, elegance, and professionalism. The website should look comparable to international security company websites with smooth animations, excellent typography, premium spacing, and a black, white, and gold color palette.
+
+Design Style:
+- Minimal
+- Premium
+- Corporate
+- Luxury
+- Responsive (Mobile, Tablet & Desktop)
+- Fast Loading
+- SEO Optimized
+- Modern UI/UX
+- Glassmorphism where suitable
+- Smooth Framer Motion animations
+- Professional icons
+- High-quality hero section
+- Premium hover effects
+- Soft shadows
+- Rounded corners
+- Elegant gradients
+- Scroll reveal animations
+- Sticky transparent navigation
+- WhatsApp Floating Button
+- Call Now Floating Button
+
+Business Information
+
+Company Name:
+SOLAPUR BOUNCERS
+
+Owner:
+Riyaz Shaikh
+
+Phone & WhatsApp:
+9011646305
+
+Email:
+solapurbouncers@gmail.com
+
+Team Strength:
+50+ Professional Bouncers & Security Guards
+
+Service Area:
+All Over Solapur
+
+Tagline:
+Professional Security. Trusted Protection. Every Event. Every Time.
+
+Hero Section
+Create a powerful full-screen hero section with a dark luxury background showing professional bouncers in black suits with earpieces protecting VIP guests. Include a premium overlay and animated headline.
+
+Headline:
+Solapur's Most Trusted Security & Bouncer Services
+
+Subheadline:
+Professional Security Guards & Event Bouncers for Weddings, Corporate Events, VIP Protection, Hotels, Festivals, Personal Security & Crowd Management across Solapur.
+
+Primary Button:
+Book Security Now
+
+Secondary Button:
+Call Now
+
+Navigation Menu
+• Home
+• About
+• Services
+• Why Choose Us
+• Team
+• Gallery
+• Testimonials
+• FAQ
+• Contact
+
+About Section
+Introduce SOLAPUR BOUNCERS as a trusted security agency providing disciplined, trained, and professional security personnel. Mention commitment to customer safety, professionalism, punctuality, and reliability.
+
+Services Section
+Create beautiful service cards with icons and hover animations for:
+
+• Event Security
+• Wedding Security
+• VIP Protection
+• Corporate Security
+• Personal Security
+• Hotel Security
+• Festival Security
+• Crowd Management
+• Celebrity Security
+• Stage & Concert Security
+• Political Event Security
+• Exhibition Security
+
+Each service card should have a premium icon, short description, and subtle animation.
+
+Why Choose Us Section
+Display animated feature cards including:
+
+✔ 50+ Professional Team
+✔ Trained & Disciplined Staff
+✔ Affordable Pricing
+✔ Trusted Across Solapur
+✔ Quick Response
+✔ Professional Uniform
+✔ Customer Satisfaction
+✔ Reliable Security
+✔ Experienced Event Management
+
+Team Section
+Introduce the company under the leadership of Riyaz Bhai Shaikh.
+
+Display premium team statistics:
+
+50+
+Professional Bouncers
+
+100+
+Events Secured
+
+100%
+Client Satisfaction
+
+
+Gallery Section
+Create a beautiful masonry-style gallery with placeholders for:
+- Wedding Security
+- VIP Protection
+- Corporate Events
+- Festival Security
+- Crowd Management
+- Hotel Security
+- Guest Welcome Services
+
+Images should have elegant hover zoom effects and lightbox preview.
+
+Testimonials Section
+Include animated testimonial cards from satisfied clients with professional-looking placeholder reviews.
+
+FAQ Section
+Include frequently asked questions such as:
+- How do I book bouncers?
+- Do you provide security for weddings?
+- Are your guards trained?
+- Do you provide VIP security?
+- Which areas do you serve?
+- Is emergency booking available?
+
+Contact Section
+Display premium contact cards.
+
+Company Name:
+SOLAPUR BOUNCERS
+
+Owner:
+Riyaz Shaikh
+
+Phone:
+9011646305
+
+WhatsApp:
+9011646305
+
+Instagram :
+www.instagram.com/solapurbouncer0786
+
+Email:
+solapurbouncers@gmail.com
+
+
+Service Area:
+All Over Solapur
+
+Include:
+• Click-to-call
+• Click-to-email
+• WhatsApp button
+• Google Maps placeholder
+• Contact Form (Name, Phone, Event Type, Date, Message)
+
+Footer
+Elegant luxury footer containing:
+
+SOLAPUR BOUNCERS
+
+Professional Security Services Across Solapur
+
+Quick Links
+
+Services
+
+Contact Details
+
+Social Media Icons (Instagram, Facebook, WhatsApp)
+
+Copyright:
+© 2026 SOLAPUR BOUNCERS. All Rights Reserved.
+
+Extra Premium Features
+• Fully responsive
+• Dark/Light mode toggle
+• Smooth scrolling
+• Scroll-to-top button
+• Animated counters
+• Loading animation
+• SEO meta tags
+• Open Graph tags
+• Structured data (Schema.org Local Business)
+• Optimized images
+• Fast performance (90+ Lighthouse)
+• Accessibility optimized
+• Mobile-first design
+• Modern React + Vite + Tailwind CSS architecture
+• Clean reusable components
+• Premium fonts (Poppins + Playfair Display or Manrope)
+• Elegant micro-interactions
+• Beautiful page transitions
+• Premium business branding
+• High-end corporate appearance suitable for a leading security agency.
+
+
+also make order section where user will ans the question , name, event , venue location, no. of bouncer needed ,message, time etc then button order then it will take to WhatsApp
+
+
+
+Overall Goal:
+The final website should look like a ₹50,000–₹1,00,000 professionally designed corporate website, instantly building trust and encouraging visitors to contact SOLAPUR BOUNCERS for security services.
