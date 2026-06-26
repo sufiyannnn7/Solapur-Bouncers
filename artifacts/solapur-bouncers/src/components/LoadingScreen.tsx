@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import logo from "@assets/ChatGPT_Image_Jun_26,_2026,_08_04_40_PM_1782485940471.png";
 
 export default function LoadingScreen() {
   const [isVisible, setIsVisible] = useState(true);
@@ -28,7 +27,7 @@ export default function LoadingScreen() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <img src={logo} alt="Solapur Bouncers Logo" className="w-32 h-auto mb-6 drop-shadow-[0_0_15px_rgba(212,175,55,0.3)]" />
+          <img src="/images/logo.png" alt="Solapur Bouncers Logo" className="w-32 h-auto mb-6 drop-shadow-[0_0_15px_rgba(212,175,55,0.3)]" />
         </motion.div>
         
         <motion.h1 

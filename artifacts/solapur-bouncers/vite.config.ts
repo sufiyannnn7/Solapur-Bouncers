@@ -64,8 +64,7 @@ export default defineConfig({
     host: "0.0.0.0",
     allowedHosts: true,
     fs: {
-      strict: false,
-      allow: ["../.."],
+      strict: true,
     },
   },
   preview: {

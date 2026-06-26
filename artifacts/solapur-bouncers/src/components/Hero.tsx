@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, PhoneCall } from "lucide-react";
-import logo from "@assets/ChatGPT_Image_Jun_26,_2026,_08_04_40_PM_1782485940471.png";
 
 export default function Hero() {
   const containerVariants = {
@@ -25,7 +24,6 @@ export default function Hero() {
       {/* Background with dark overlay & subtle gradient */}
       <div className="absolute inset-0 z-0 bg-background">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/10 via-background to-background" />
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-30 mix-blend-overlay"></div>
       </div>
 
       <div className="container relative z-10 px-4 md:px-6 flex flex-col items-center text-center">
@@ -37,7 +35,7 @@ export default function Hero() {
         >
           <motion.img 
             variants={itemVariants}
-            src={logo} 
+            src="/images/logo.png"
             alt="Solapur Bouncers Logo" 
             className="w-32 md:w-40 h-auto mb-8 drop-shadow-[0_0_20px_rgba(212,175,55,0.4)]"
           />

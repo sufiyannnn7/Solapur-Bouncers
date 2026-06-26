@@ -2,18 +2,12 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ZoomIn } from "lucide-react";
 
-import img1 from "@assets/WhatsApp_Image_2026-06-11_at_9.16.02_PM_(1)_1782486884048.jpeg";
-import img2 from "@assets/WhatsApp_Image_2026-06-11_at_9.16.02_PM_(2)_1782486895602.jpeg";
-import img3 from "@assets/WhatsApp_Image_2026-06-13_at_2.31.17_PM_1782486900833.jpeg";
-import img4 from "@assets/WhatsApp_Image_2026-06-23_at_1.39.02_PM_1782486905985.jpeg";
-import img5 from "@assets/WhatsApp_Image_2026-06-23_at_1.59.41_PM_1782486902502.jpeg";
-
 const galleryImages = [
-  { src: img1, label: "Event Security Team" },
-  { src: img2, label: "Wedding Security" },
-  { src: img3, label: "Corporate Event" },
-  { src: img4, label: "Female Security Staff" },
-  { src: img5, label: "Traditional Event Security" },
+  { src: "/images/gallery1.jpeg", label: "Event Security Team" },
+  { src: "/images/gallery2.jpeg", label: "Wedding Security" },
+  { src: "/images/gallery3.jpeg", label: "Corporate Event" },
+  { src: "/images/gallery4.jpeg", label: "Female Security Staff" },
+  { src: "/images/gallery5.jpeg", label: "Traditional Event Security" },
 ];
 
 export default function Gallery() {

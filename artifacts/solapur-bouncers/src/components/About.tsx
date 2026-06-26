@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Shield, Clock, Award, Users } from "lucide-react";
-import groupImage from "@assets/WhatsApp_Image_2026-06-11_at_9.16.02_PM_(1)_1782486884048.jpeg";
 
 export default function About() {
   const features = [
@@ -60,7 +59,7 @@ export default function About() {
             <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-full opacity-50"></div>
             <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
               <img 
-                src={groupImage} 
+                src="/images/gallery1.jpeg"
                 alt="Solapur Bouncers Team" 
                 className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
               />

@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Moon, Sun } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@assets/ChatGPT_Image_Jun_26,_2026,_08_04_40_PM_1782485940471.png";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -46,7 +45,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <a href="#home" onClick={(e) => scrollToSection(e, "#home")} className="flex items-center gap-3">
-          <img src={logo} alt="Solapur Bouncers" className="w-10 h-10 md:w-12 md:h-12 object-contain" />
+          <img src="/images/logo.png" alt="Solapur Bouncers" className="w-10 h-10 md:w-12 md:h-12 object-contain" />
           <span className="font-serif font-bold text-lg md:text-xl tracking-wider hidden sm:block">
             SOLAPUR <span className="text-primary">BOUNCERS</span>
           </span>

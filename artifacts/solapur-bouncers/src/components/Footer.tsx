@@ -1,5 +1,4 @@
 import { Shield } from "lucide-react";
-import logo from "@assets/ChatGPT_Image_Jun_26,_2026,_08_04_40_PM_1782485940471.png";
 import { SiWhatsapp, SiInstagram, SiFacebook } from "react-icons/si";
 
 export default function Footer() {
@@ -12,7 +11,7 @@ export default function Footer() {
           
           <div className="space-y-6">
             <a href="#home" className="flex items-center gap-3">
-              <img src={logo} alt="Solapur Bouncers" className="w-12 h-12 object-contain" />
+              <img src="/images/logo.png" alt="Solapur Bouncers" className="w-12 h-12 object-contain" />
               <span className="font-serif font-bold text-xl tracking-wider">
                 SOLAPUR <span className="text-primary">BOUNCERS</span>
               </span>
