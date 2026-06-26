@@ -21,14 +21,14 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const t = setTimeout(() => setLoading(false), 2200);
+    const t = setTimeout(() => setLoading(false), 800);
     return () => clearTimeout(t);
   }, []);
 
   return (
     <div className="bg-background min-h-screen text-foreground relative selection:bg-primary selection:text-black">
-      <AnimatePresence>
-        {loading && <LoadingScreen />}
+      <AnimatePresence mode="wait">
+        {loading && <LoadingScreen key="loading" />}
       </AnimatePresence>
 
       <Navbar />
