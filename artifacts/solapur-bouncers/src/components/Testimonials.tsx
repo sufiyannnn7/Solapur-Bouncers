@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Star } from "lucide-react";
+import { Star, StarHalf } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function Testimonials() {
@@ -7,19 +7,25 @@ export default function Testimonials() {
     {
       name: "Rahul Deshmukh",
       event: "Wedding",
-      review: "Riyaz bhai and his team were absolutely professional at our wedding. The crowd was managed perfectly without any hassle. Highly recommended for family events!",
+      review: "Absolutely professional at our wedding. Crowd was managed perfectly. Highly recommended!",
       rating: 5,
     },
     {
       name: "Amit Patil",
       event: "Corporate Event",
-      review: "SOLAPUR BOUNCERS provided excellent security for our annual corporate meet. On time, disciplined, and extremely professional behavior from all guards.",
-      rating: 5,
+      review: "Excellent security for our corporate meet. On time, disciplined, and extremely professional.",
+      rating: 4.5,
     },
     {
       name: "Sandeep Kulkarni",
       event: "Festival Organizer",
-      review: "We hired them for a massive festival in Solapur. With thousands of people, their crowd management was flawless. Complete peace of mind. Will use again!",
+      review: "Flawless crowd management for a massive festival. Complete peace of mind. Will use again!",
+      rating: 4,
+    },
+    {
+      name: "Vikram Singh",
+      event: "VIP Protection",
+      review: "Best bouncer service in Solapur. Provided VIP protection with utmost discretion and safety.",
       rating: 5,
     },
   ];
@@ -40,7 +46,7 @@ export default function Testimonials() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {testimonials.map((testimonial, idx) => (
             <motion.div
               key={idx}
@@ -49,24 +55,33 @@ export default function Testimonials() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
             >
-              <Card className="luxury-card bg-secondary/30 h-full border-primary/20 hover:border-primary/50">
-                <CardContent className="p-8 flex flex-col h-full relative">
-                  <div className="absolute top-4 right-6 text-6xl text-primary/10 font-serif leading-none">"</div>
+              <Card className="luxury-card bg-[#1A1A1A] h-full border-white/5 hover:border-white/10">
+                <CardContent className="p-4 sm:p-5 flex flex-col h-full">
                   
-                  <div className="flex gap-1 mb-6 text-primary">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-primary" />
-                    ))}
+                  <div className="flex justify-between items-start mb-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 shrink-0 rounded-full bg-[#d93025] flex items-center justify-center text-white font-bold text-lg">
+                        {testimonial.name.charAt(0)}
+                      </div>
+                      <div>
+                        <h5 className="font-bold text-white text-sm sm:text-base leading-tight">{testimonial.name}</h5>
+                        <p className="text-white/50 text-[11px] sm:text-xs mt-0.5">{testimonial.event}</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-0.5 pt-1">
+                      {[...Array(Math.floor(testimonial.rating))].map((_, i) => (
+                        <Star key={i} className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-[#fbbc04] text-[#fbbc04]" />
+                      ))}
+                      {testimonial.rating % 1 !== 0 && (
+                        <StarHalf className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-[#fbbc04] text-[#fbbc04]" />
+                      )}
+                    </div>
                   </div>
                   
-                  <p className="text-white/80 italic leading-relaxed flex-grow mb-8 text-lg">
+                  <p className="text-white/80 leading-relaxed flex-grow text-sm">
                     "{testimonial.review}"
                   </p>
                   
-                  <div className="mt-auto border-t border-white/10 pt-4">
-                    <h5 className="font-bold text-white text-lg">{testimonial.name}</h5>
-                    <p className="text-primary text-sm font-medium">{testimonial.event}</p>
-                  </div>
                 </CardContent>
               </Card>
             </motion.div>

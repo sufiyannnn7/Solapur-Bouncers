@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
             transition={{ duration: 0.8 }}
             className="w-full lg:w-1/2"
           >
-            <div className="relative aspect-square max-w-md mx-auto">
+            <div className="relative aspect-square max-w-[240px] sm:max-w-[280px] mx-auto">
               <div className="absolute inset-0 border-2 border-primary/30 rounded-full animate-[spin_20s_linear_infinite]"></div>
               <div className="absolute inset-4 border border-primary/20 rounded-full border-dashed animate-[spin_15s_linear_infinite_reverse]"></div>
               <div className="absolute inset-0 flex items-center justify-center flex-col text-center">

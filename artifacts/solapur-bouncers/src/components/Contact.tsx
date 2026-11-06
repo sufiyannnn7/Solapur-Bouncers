@@ -1,37 +1,37 @@
 import { motion } from "framer-motion";
-import { Phone, Mail, Instagram, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { SiWhatsapp } from "react-icons/si";
+import { SiWhatsapp, SiInstagram, SiGmail } from "react-icons/si";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Contact() {
   const contactInfo = [
     {
-      icon: <Phone className="w-6 h-6" />,
+      icon: <FaPhoneAlt className="w-6 h-6 text-[#25D366]" />,
       title: "Call Us",
       value: "+91 9011646305",
       link: "tel:+919011646305",
-      color: "hover:text-primary"
+      color: "hover:border-[#25D366]"
     },
     {
-      icon: <SiWhatsapp className="w-6 h-6" />,
+      icon: <SiWhatsapp className="w-6 h-6 text-[#25D366]" />,
       title: "WhatsApp",
       value: "Chat with us",
       link: "https://wa.me/919011646305",
-      color: "hover:text-[#25D366]"
+      color: "hover:border-[#25D366]"
     },
     {
-      icon: <Mail className="w-6 h-6" />,
+      icon: <SiGmail className="w-6 h-6 text-[#EA4335]" />,
       title: "Email",
       value: "solapurbouncers@gmail.com",
       link: "mailto:solapurbouncers@gmail.com",
-      color: "hover:text-primary"
+      color: "hover:border-[#EA4335]"
     },
     {
-      icon: <Instagram className="w-6 h-6" />,
+      icon: <SiInstagram className="w-6 h-6 text-[#E1306C]" />,
       title: "Instagram",
       value: "@solapurbouncer0786",
       link: "https://www.instagram.com/solapurbouncer0786",
-      color: "hover:text-[#E1306C]"
+      color: "hover:border-[#E1306C]"
     }
   ];
 
@@ -52,8 +52,8 @@ export default function Contact() {
           <p className="text-white/60 max-w-2xl mx-auto">Available 24/7 for urgent security requirements across Solapur.</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {contactInfo.map((info, idx) => (
               <motion.a
                 href={info.link}
@@ -67,35 +67,17 @@ export default function Contact() {
                 className="block h-full"
               >
                 <Card className={`luxury-card bg-secondary/30 h-full border-white/10 hover:border-primary/50 group transition-all`}>
-                  <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
-                    <div className={`w-12 h-12 rounded-full bg-background border border-white/10 flex items-center justify-center mb-4 text-white/80 group-hover:border-primary/50 transition-colors ${info.color}`}>
+                  <CardContent className="p-4 sm:p-6 flex flex-col items-center justify-center text-center h-full">
+                    <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-background border border-white/10 flex items-center justify-center mb-3 sm:mb-4 transition-colors ${info.color}`}>
                       {info.icon}
                     </div>
-                    <h3 className="font-bold text-white mb-1">{info.title}</h3>
-                    <p className="text-white/60 text-sm font-medium">{info.value}</p>
+                    <h3 className="font-bold text-white text-sm sm:text-base mb-1">{info.title}</h3>
+                    <p className="text-white/60 text-[10px] sm:text-sm font-medium w-full break-all sm:break-normal px-1">{info.value}</p>
                   </CardContent>
                 </Card>
               </motion.a>
             ))}
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="h-full min-h-[300px] rounded-xl overflow-hidden border border-white/10 relative"
-          >
-            {/* Styled Map Placeholder */}
-            <div className="absolute inset-0 bg-[#0f0f0f] flex flex-col items-center justify-center text-center p-8">
-              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <MapPin className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-2xl font-serif font-bold text-white mb-2">Headquarters</h3>
-              <p className="text-white/70 text-lg">Solapur, Maharashtra</p>
-              <p className="text-primary mt-4 font-medium uppercase tracking-widest text-sm">Serving Entire District</p>
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>

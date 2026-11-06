@@ -4,6 +4,14 @@
 
 @custom-variant dark (&:is(.dark *));
 
+#replit-pill-host {
+    display: none !important;
+}
+
+replit-pill-host {
+    display: none !important;
+}
+
 @theme inline {
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
@@ -121,15 +129,23 @@
     @apply border-border;
   }
   body {
-    @apply font-sans antialiased bg-background text-foreground selection:bg-primary selection:text-primary-foreground;
+    @apply font-sans antialiased bg-background text-foreground selection:bg-primary selection:text-primary-foreground text-[15px] sm:text-base leading-relaxed;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif tracking-tight;
+    @apply font-serif tracking-tight font-medium;
+  }
+  p {
+    @apply text-white/80;
   }
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Global utility for responsive images to prevent them from becoming too massive */
+.responsive-img {
+  @apply w-full max-h-[70vh] sm:max-h-[60vh] md:max-h-[70vh] object-cover;
 }
 
 .gold-gradient-text {
@@ -157,4 +173,13 @@ html {
 .luxury-card:hover {
   @apply border-primary/50 shadow-[0_0_20px_rgba(212,175,55,0.1)];
   transform: translateY(-4px);
+}
+
+/* Hide Replit pill */
+#replit-pill-host {
+    display: none !important;
+}
+
+replit-pill-host {
+    display: none !important;
 }

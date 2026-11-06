@@ -7,7 +7,7 @@ export default function Team() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h4 className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">Command & Control</h4>
-          <h2 className="text-3xl md:text-5xl font-serif font-bold text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white">
             Meet the <span className="gold-gradient-text">Leader</span>
           </h2>
         </div>
@@ -25,7 +25,7 @@ export default function Team() {
               <img
                 src="/images/owner.jpeg"
                 alt="Riyaz Shaikh — Founder & Director, Solapur Bouncers"
-                className="w-full max-w-xs mx-auto object-contain"
+                className="w-full max-w-xs mx-auto responsive-img"
                 style={{ imageRendering: "auto" }}
               />
             </div>
@@ -42,7 +42,7 @@ export default function Team() {
                   ))}
                 </div>
 
-                <h3 className="text-3xl md:text-4xl font-serif font-bold text-white mb-1">
+                <h3 className="text-3xl sm:text-4xl font-serif font-bold text-white mb-1">
                   Riyaz Shaikh
                 </h3>
                 <p className="text-primary uppercase tracking-widest text-sm font-semibold mb-6 flex items-center gap-2">
@@ -70,7 +70,7 @@ export default function Team() {
                 </div>
 
                 <div className="mt-8 flex flex-wrap gap-2">
-                  {["Event Security", "VIP Protection", "Crowd Management", "Wedding Security"].map(tag => (
+                  {["Event Security", "VIP Protection", "Crowd Management", "Wedding Security", "Wedding Guest Welcome"].map(tag => (
                     <span key={tag} className="px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-medium">
                       {tag}
                     </span>
@@ -91,20 +91,20 @@ export default function Team() {
             <img
               src="/images/owner-team.jpeg"
               alt="Riyaz Shaikh with Solapur Bouncers team"
-              className="w-full object-contain bg-[#111]"
+              className="w-full responsive-img bg-[#111]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4">
+            <div className="hidden sm:block absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+            <div className="relative sm:absolute bg-[#151515] sm:bg-transparent bottom-0 left-0 right-0 p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 border-t sm:border-none border-white/5">
               <div>
-                <p className="text-primary text-xs uppercase tracking-widest font-semibold mb-1">Team Leader</p>
-                <h4 className="text-white text-xl font-serif font-bold flex items-center gap-2">
-                  <Award className="w-5 h-5 text-primary" />
+                <p className="text-primary text-[10px] sm:text-xs uppercase tracking-widest font-semibold mb-1">Team Leader</p>
+                <h4 className="text-white text-lg sm:text-xl font-serif font-bold flex items-center gap-2">
+                  <Award className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                   Riyaz Shaikh & Core Team
                 </h4>
-                <p className="text-white/60 text-sm mt-1">The backbone of SOLAPUR BOUNCERS — trained, disciplined, and trusted.</p>
+                <p className="text-white/60 text-xs sm:text-sm mt-1">The backbone of SOLAPUR BOUNCERS — trained, disciplined, and trusted.</p>
               </div>
-              <div className="bg-primary/10 backdrop-blur-sm border border-primary/30 px-4 py-2 rounded-xl">
-                <span className="text-primary text-sm font-bold uppercase tracking-widest">Est. Solapur</span>
+              <div className="bg-primary/10 backdrop-blur-sm border border-primary/30 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl">
+                <span className="text-primary text-xs sm:text-sm font-bold uppercase tracking-widest">Est. Solapur</span>
               </div>
             </div>
           </motion.div>

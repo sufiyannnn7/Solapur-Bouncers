@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
   { icon: <Music />, title: "Event Security", desc: "Comprehensive protection for private and public gatherings." },
+  { icon: <MapPin />, title: "Wedding Guest Welcome Services", desc: "Warm, professional greetings and access management for your esteemed guests." },
   { icon: <Users />, title: "Wedding Security", desc: "Discreet and respectful security for your special day." },
   { icon: <Star />, title: "VIP Protection", desc: "Elite close-protection services for high-profile individuals." },
   { icon: <Briefcase />, title: "Corporate Security", desc: "Professional guarding for AGMs, offices, and corporate events." },
@@ -18,7 +19,6 @@ const services = [
   { icon: <Zap />, title: "Celebrity Security", desc: "Specialized protection details for public figures." },
   { icon: <Mic />, title: "Stage & Concert Security", desc: "Stage barricade and artist escort services." },
   { icon: <Flag />, title: "Political Event Security", desc: "Strategic planning and protection for rallies." },
-  { icon: <MapPin />, title: "Exhibition Security", desc: "Asset protection and access management for trade shows." },
 ];
 
 export default function Services() {
@@ -40,10 +40,10 @@ export default function Services() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h4 className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">Our Expertise</h4>
-          <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white mb-6">
             Comprehensive <span className="gold-gradient-text">Security Solutions</span>
           </h2>
-          <p className="text-white/60 text-lg">
+          <p className="text-white/90 text-[15px] sm:text-lg">
             Delivering unwavering protection across all domains. Our trained professionals ensure your safety is never compromised.
           </p>
         </div>
@@ -53,19 +53,19 @@ export default function Services() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+          className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6"
         >
           {services.map((service, idx) => (
             <motion.div key={idx} variants={item}>
               <Card className="luxury-card h-full bg-card/50 border-white/5 group">
-                <CardContent className="p-6 flex flex-col items-start text-left h-full">
-                  <div className="w-12 h-12 rounded-lg bg-background border border-primary/20 text-primary flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary group-hover:text-black transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.15)] group-hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]">
-                    {service.icon}
+                <CardContent className="p-3 sm:p-6 flex flex-col items-start text-left h-full">
+                  <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-lg bg-background border border-primary/20 text-primary flex items-center justify-center mb-3 sm:mb-6 group-hover:scale-110 group-hover:bg-primary group-hover:text-black transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.15)] group-hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                    {/* Scale icon slightly down on mobile */}
+                    <div className="scale-75 sm:scale-100 flex items-center justify-center">
+                      {service.icon}
+                    </div>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3 font-serif">{service.title}</h3>
-                  <p className="text-white/60 text-sm leading-relaxed mt-auto">
-                    {service.desc}
-                  </p>
+                  <h3 className="text-sm sm:text-2xl font-bold text-white mb-0 font-serif leading-tight">{service.title}</h3>
                 </CardContent>
               </Card>
             </motion.div>

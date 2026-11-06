@@ -61,17 +61,17 @@ export default function FAQ() {
             transition={{ duration: 0.8 }}
             className="w-full lg:w-2/3"
           >
-            <Accordion type="single" collapsible className="w-full space-y-4">
+            <Accordion type="single" collapsible className="w-full space-y-2 sm:space-y-4">
               {faqs.map((faq, index) => (
                 <AccordionItem 
                   key={index} 
                   value={`item-${index}`}
-                  className="bg-card/50 border border-white/10 px-6 rounded-lg data-[state=open]:border-primary/50 transition-colors"
+                  className="bg-card/50 border border-white/10 px-4 sm:px-6 rounded-lg data-[state=open]:border-primary/50 transition-colors"
                 >
-                  <AccordionTrigger className="text-left text-white hover:text-primary hover:no-underline py-4 font-medium text-lg">
+                  <AccordionTrigger className="text-left text-white hover:text-primary hover:no-underline py-3 sm:py-4 font-medium text-sm sm:text-lg">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-white/70 pb-4 text-base leading-relaxed">
+                  <AccordionContent className="text-white/70 pb-3 sm:pb-4 text-xs sm:text-base leading-relaxed">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

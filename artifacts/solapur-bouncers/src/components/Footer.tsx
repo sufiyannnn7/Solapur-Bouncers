@@ -1,5 +1,5 @@
 import { Shield } from "lucide-react";
-import { SiWhatsapp, SiInstagram, SiFacebook } from "react-icons/si";
+import { SiWhatsapp, SiInstagram } from "react-icons/si";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear() > 2026 ? new Date().getFullYear() : 2026;
@@ -20,14 +20,11 @@ export default function Footer() {
               Professional Security. Trusted Protection. Every Event. Every Time. Solapur's elite protection agency led by Riyaz Shaikh.
             </p>
             <div className="flex gap-4">
-              <a href="https://www.instagram.com/solapurbouncer0786" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-primary hover:text-black transition-colors">
-                <SiInstagram className="w-5 h-5" />
+              <a href="https://www.instagram.com/solapurbouncer0786" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors">
+                <SiInstagram className="w-5 h-5 text-[#E1306C]" />
               </a>
-              <a href="https://wa.me/919011646305" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-primary hover:text-black transition-colors">
-                <SiWhatsapp className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-primary hover:text-black transition-colors">
-                <SiFacebook className="w-5 h-5" />
+              <a href="https://wa.me/919011646305" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors">
+                <SiWhatsapp className="w-5 h-5 text-[#25D366]" />
               </a>
             </div>
           </div>
@@ -48,7 +45,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold mb-6 font-serif text-lg">Services</h4>
             <ul className="space-y-3">
-              {['Wedding Security', 'VIP Protection', 'Corporate Events', 'Festival Security', 'Personal Guards'].map((service) => (
+              {['Wedding Guest Welcome', 'Wedding Security', 'VIP Protection', 'Corporate Events', 'Festival Security', 'Personal Guards'].map((service) => (
                 <li key={service}>
                   <span className="text-white/60 flex items-center gap-2 text-sm">
                     <Shield className="w-3 h-3 text-primary" /> {service}

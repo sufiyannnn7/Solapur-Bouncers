@@ -41,7 +41,7 @@ export default function Hero() {
 
           <motion.h1
             variants={itemVariants}
-            className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white leading-tight mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white leading-tight mb-6 px-2"
           >
             Solapur's Most Trusted <br className="hidden md:block" />
             <span className="gold-gradient-text">Security Services</span>
@@ -49,7 +49,7 @@ export default function Hero() {
 
           <motion.p
             variants={itemVariants}
-            className="text-base md:text-lg lg:text-xl text-white/80 font-light max-w-3xl mb-10 leading-relaxed"
+            className="text-[15px] sm:text-base md:text-lg lg:text-xl text-white/90 font-light max-w-3xl mb-10 leading-relaxed px-4"
           >
             Professional Security Guards & Event Bouncers for Weddings, Corporate Events, VIP Protection, Hotels, Festivals & Crowd Management across Solapur.
           </motion.p>

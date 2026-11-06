@@ -6,9 +6,9 @@ const galleryImages = [
   { src: "/images/gallery1.jpeg", label: "Event Security Team" },
   { src: "/images/gallery2.jpeg", label: "Wedding Security" },
   { src: "/images/gallery3.jpeg", label: "Corporate Event" },
+  { src: "/images/gallery5.jpeg", label: "Wedding Guest Welcome" },
+  { src: "/images/gallery4.jpeg", label: "Wedding Guest Welcome" },
   { src: "/images/owner-team.jpeg", label: "Director & Core Team" },
-  { src: "/images/gallery4.jpeg", label: "Female Security Staff" },
-  { src: "/images/gallery5.jpeg", label: "Traditional Event Security" },
 ];
 
 export default function Gallery() {
@@ -39,7 +39,7 @@ export default function Gallery() {
               <img
                 src={img.src}
                 alt={img.label}
-                className="w-full h-auto block transition-transform duration-700 group-hover:scale-105"
+                className="w-full max-h-[50vh] object-cover block transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
               />
 
@@ -86,7 +86,7 @@ export default function Gallery() {
               <img
                 src={selectedImage.src}
                 alt={selectedImage.label}
-                className="max-w-full max-h-[80vh] w-auto h-auto object-contain rounded-xl border border-primary/30 shadow-[0_0_60px_rgba(212,175,55,0.12)]"
+                className="max-w-full max-h-[70vh] sm:max-h-[80vh] w-auto h-auto object-contain rounded-xl border border-primary/30 shadow-[0_0_60px_rgba(212,175,55,0.12)]"
               />
               <div className="flex items-center gap-3">
                 <div className="w-8 h-[1px] bg-primary/60" />

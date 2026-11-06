@@ -23,26 +23,26 @@ export default function About() {
           >
             <div>
               <h4 className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">About Us</h4>
-              <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight">
                 The Elite Standard in <span className="gold-gradient-text">Protection</span>
               </h2>
-              <p className="text-lg text-white/70 leading-relaxed">
+              <p className="text-[15px] sm:text-lg text-white/90 leading-relaxed">
                 SOLAPUR BOUNCERS is Solapur's most trusted security agency. We provide a disciplined, highly trained, and professional team for all types of events.
               </p>
-              <p className="text-lg text-white/70 leading-relaxed mt-4">
+              <p className="text-[15px] sm:text-lg text-white/90 leading-relaxed mt-4">
                 Led by <strong className="text-white">Riyaz Shaikh</strong>, our agency is committed to ensuring absolute safety with professionalism, punctuality, and reliability. Whether it's a high-profile VIP visit, a grand wedding, or massive crowd management, our presence guarantees peace of mind.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 pt-4">
               {features.map((feature, idx) => (
-                <div key={idx} className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
+                <div key={idx} className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start sm:items-center">
+                  <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
                     {feature.icon}
                   </div>
                   <div>
-                    <h5 className="font-bold text-white mb-1">{feature.title}</h5>
-                    <p className="text-sm text-white/60">{feature.desc}</p>
+                    <h5 className="font-bold text-white text-sm sm:text-base mb-1">{feature.title}</h5>
+                    <p className="text-[11px] sm:text-sm text-white/60 leading-tight">{feature.desc}</p>
                   </div>
                 </div>
               ))}
@@ -62,10 +62,10 @@ export default function About() {
               <img
                 src="/images/owner-team.jpeg"
                 alt="Riyaz Shaikh with Solapur Bouncers Team"
-                className="w-full h-auto object-contain block"
+                className="responsive-img rounded-xl block"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute bottom-5 left-5">
+              <div className="hidden sm:block absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+              <div className="relative sm:absolute bg-[#151515] sm:bg-transparent bottom-0 left-0 right-0 p-4 sm:bottom-5 sm:left-5 border-t sm:border-none border-white/5">
                 <div className="bg-background/80 backdrop-blur-md border border-primary/20 px-4 py-3 rounded-xl inline-flex items-center gap-3">
                   <Shield className="w-5 h-5 text-primary" />
                   <div>
